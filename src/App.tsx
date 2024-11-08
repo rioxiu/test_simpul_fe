@@ -62,7 +62,7 @@ function App() {
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
   };
 
-  const setMessageandScrool = async (data: string[]) => {
+  const setMessageandScrool = async (data: Message[]) => {
     setMessage(data);
     resetScroll();
   };

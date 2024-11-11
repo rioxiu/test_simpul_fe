@@ -49,7 +49,9 @@ function App() {
 
   const fetchMessage = async () => {
     try {
-      const response = await fetch("http://localhost:3000/messages");
+      const response = await fetch(
+        "https://testrails.richardosinulingga.site/messages"
+      );
       const data = await response.json();
       setMessageandScrool(data);
     } catch {

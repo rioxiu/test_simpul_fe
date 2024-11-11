@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { IoSend } from "react-icons/io5";
 import "./App.css";
-import { ws } from "./ utils/websocket";
+import { ws } from "./utils/websocket";
 
 type Message = {
   id: string;
@@ -70,7 +70,7 @@ function App() {
   const sendMessageHandler = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      await fetch("http://localhost:3000/messages", {
+      await fetch("https://testrails.richardosinulingga.site/messages", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
